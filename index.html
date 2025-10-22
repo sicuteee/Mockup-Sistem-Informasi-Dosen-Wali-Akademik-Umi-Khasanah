@@ -1,13 +1,91 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profil Saya</title>
+  <title>Profil - Umi Khasanah</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* Judul utama halaman */
+    .page-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 25px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Kartu profil */
+    .profile-card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 30px;
+      width: 320px;
+      transition: 0.3s;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .profile-card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #4a90e2;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 22px;
+      color: #333;
+      margin: 5px 0;
+    }
+
+    p {
+      color: #555;
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    .chip {
+      background: #e9effd;
+      color: #2c3e50;
+      padding: 8px 12px;
+      border-radius: 50px;
+      font-size: 14px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  </style>
 </head>
-<body style="text-align:center; font-family:sans-serif;">
-  <h1>Umi Khasanah</h1>
-  <p>NIM: 222511031</p>
-  <img src="umi.jpg" alt="Foto Profil" width="200">
+<body>
+
+  <div class="page-title">
+    Mockup Sistem - Sistem Informasi Dosen Wali Akademik
+  </div>
+
+  <div class="profile-card">
+    <img src="ummi.jpg" alt="Foto Profil Umi Khasanah">
+    <h1>Umi Khasanah</h1>
+    <p>NIM: 222511031</p>
+    <div class="chip">Mahasiswa</div>
+  </div>
+
 </body>
 </html>
