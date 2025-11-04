@@ -3,122 +3,160 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SIMA - Umi Khasanah</title>
+  <title>Review Desain - SIMA</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       background-color: #f0f2f5;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       margin: 0;
+      padding: 20px;
     }
 
-    /* Judul utama halaman */
+    /* Judul utama */
     .page-title {
-      font-size: 20px;
+      text-align: center;
+      font-size: 22px;
       font-weight: bold;
       color: #2c3e50;
-      margin-bottom: 25px;
-      text-align: center;
+      margin-bottom: 30px;
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
 
-    /* Kartu profil */
-    .profile-card {
-      background: #fff;
+    /* Grid galeri desain */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* Kartu desain */
+    .design-card {
+      background-color: #fff;
       border-radius: 15px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      padding: 30px;
-      width: 320px;
+      overflow: hidden;
       transition: 0.3s;
     }
 
-    .profile-card:hover {
+    .design-card:hover {
       transform: translateY(-5px);
     }
 
-    .profile-card img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
+    .design-card img {
+      width: 100%;
+      height: 200px;
       object-fit: cover;
-      border: 3px solid #4a90e2;
-      margin-bottom: 15px;
     }
 
-    h1 {
-      font-size: 22px;
-      color: #333;
-      margin: 5px 0;
+    .design-info {
+      padding: 15px;
+      text-align: center;
     }
 
-    p {
-      color: #555;
-      font-size: 16px;
-      margin: 5px 0;
-    }
-
-    .chip {
-      background: #e9effd;
+    .design-info h3 {
+      font-size: 18px;
       color: #2c3e50;
-      padding: 8px 12px;
-      border-radius: 50px;
+      margin: 8px 0 5px;
+    }
+
+    .design-info p {
       font-size: 14px;
-      display: inline-block;
-      margin-top: 10px;
+      color: #555;
+      margin: 0;
     }
   </style>
 </head>
 <body>
 
-   <h1>Preview Desain Sistem Informasi Monitoring Akademik</h1>
+  <div class="page-title">
+    Review Desain SIMA (Sistem Informasi Monitoring Akademik)
+  </div>
 
-    <div class="gallery">
-        <div class="gallery-item">
-            <img src="registrasi.png" alt="Registrasi">
-            <div class="caption">Registrasi</div>
-        </div>
-        <div class="gallery-item">
-            <img src="login.png" alt="Login">
-            <div class="caption">Login</div>
-        </div>
-        <div class="gallery-item">
-            <img src="home.png" alt="Home">
-            <div class="caption">Home</div>
-        </div>
-                </div>
-         <div class="gallery-item">
-            <img src="konsultasi.png" alt="Konsultasi">
-            <div class="caption">Konsultasi</div>
-        </div>
-          <div class="gallery-item">
-            <img src="mahasiswa.png" alt="Mahasiswa">
-            <div class="caption">Mahasiswa</div>
-        </div>
-         <div class="gallery-item">
-            <img src="notifikasi.png" alt="Notifikasi">
-            <div class="caption">Notifikasi</div>
-        </div>
-         <div class="gallery-item">
-            <img src="laporan.png" alt="Laporan">
-            <div class="caption">Laporan</div>
-        </div>
-         <div class="gallery-item">
-            <img src="penilaian akademik.png" alt="Penilaian Akademik">
-            <div class="caption">Penilaian Akademik</div>
-        </div>
-         <div class="gallery-item">
-            <img src="jadwal konsultasi.png" alt="Jadwal Konsultasi">
-            <div class="caption">Jadwal Konsultasi</div>
-        </div>
-         <div class="gallery-item">
-            <img src="profil dosenwali.png" alt="Profil Dosen Wali">
-            <div class="caption">Profil Dosen Wali</div>
-        </div>
+  <div class="gallery">
+    <!-- Desain 1 -->
+    <div class="design-card">
+      <img src="desain1.png" alt="Desain 1">
+      <div class="design-info">
+        <h3>Register</h3>
+      </div>
+    </div>
+
+    <!-- Desain 2 -->
+    <div class="design-card">
+      <img src="desain2.png" alt="Desain 2">
+      <div class="design-info">
+        <h3>Login</h3>
+      </div>
+    </div>
+
+    <!-- Desain 3 -->
+    <div class="design-card">
+      <img src="desain3.png" alt="Desain 3">
+      <div class="design-info">
+        <h3>Home</h3>
+      </div>
+    </div>
+
+    <!-- Desain 4 -->
+    <div class="design-card">
+      <img src="desain4.png" alt="Desain 4">
+      <div class="design-info">
+        <h3>Konsultasi</h3>
+      </div>
+    </div>
+
+    <!-- Desain 5 -->
+    <div class="design-card">
+      <img src="desain5.png" alt="Desain 5">
+      <div class="design-info">
+        <h3>Mahasiswa</h3>
+      </div>
+    </div>
+
+    <!-- Desain 6 -->
+    <div class="design-card">
+      <img src="desain6.png" alt="Desain 6">
+      <div class="design-info">
+        <h3>Notifikasi</h3>
+      </div>
+    </div>
+
+    <!-- Desain 7 -->
+    <div class="design-card">
+      <img src="desain7.png" alt="Desain 7">
+      <div class="design-info">
+        <h3>Laporan</h3>
+      </div>
+    </div>
+
+    <!-- Desain 8 -->
+    <div class="design-card">
+      <img src="desain8.png" alt="Desain 8">
+      <div class="design-info">
+        <h3>Penilaian Akademik</h3>
+      </div>
+    </div>
+
+    <!-- Desain 9 -->
+    <div class="design-card">
+      <img src="desain9.png" alt="Desain 9">
+      <div class="design-info">
+        <h3>Jadwal Konsultasi</h3>
+      </div>
+    </div>
+
+    <!-- Desain 10 -->
+    <div class="design-card">
+      <img src="desain10.png" alt="Desain 10">
+      <div class="design-info">
+        <h3>Profil Dosen Wali Akademik</h3>
+      </div>
+    </div>
+
+  </div>
+
 </body>
 </html>
